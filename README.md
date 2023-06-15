@@ -1,4 +1,4 @@
-# Nội dung gồm 2 phần là: motion detect (phát hiện chuyển động) và mqtt communication (giao tiếp truyền thông tin thông qua giao thức mqtt)  
+# Nội dung gồm 2 phần là: motion detect (phát hiện chuyển động) và HiveMQ mqtt communication (giao tiếp truyền thông tin thông qua giao thức mqtt)  
 
 Giải thích: code này được áp dụng cho các camera đời cũ không có phát hiện chuyển động cũng như không có giao thức giao tiếp truyền thông tin. Khi chạy code sẽ phát hiện chuyển động và gửi 1 luồng tin json (có thể bắt được) qua giao thức mqtt. Khi có chuyển động trong vùng quét của camera, camera sẽ lưu đoạn video 1 phút sau khi có chuyển động.  
   
