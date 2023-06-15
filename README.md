@@ -9,3 +9,5 @@ application_mqtt.py: function phát hiện chuyển động và lưu video
 test_http_post.py: function gửi thông tin khi có phát hiện chuyển động  
 main_mqtt: chạy server  
 test_client.py: nhận thông tin và lưu vào mysql (có thể thay bằng DB tùy ý)  
+
+Cách chạy server:
