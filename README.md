@@ -4,4 +4,8 @@ Giải thích: code này được áp dụng cho các camera đời cũ không c
   
 Bước 1: phát hiện chuyển động thông qua việc chênh lệch cái bit trong các frame liên tiếp (server)  
 Bước 2: gửi thông tin gồm id camera, ngày giờ phút phát hiện chuyển động qua giao thức mqtt (server)  
-Bước 3: nhận thông tin được gửi ở trên (client)
+Bước 3: nhận thông tin được gửi ở trên (client)  
+application_mqtt.py: function phát hiện chuyển động và lưu video
+test_http_post.py: function gửi thông tin khi có phát hiện chuyển động
+main_mqtt: chạy server
+test_client.py: nhận thông tin và lưu vào mysql (có thể thay bằng DB tùy ý)
