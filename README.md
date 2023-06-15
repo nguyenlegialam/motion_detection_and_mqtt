@@ -36,6 +36,7 @@ Bước 4: chạy code main_mqtt ở máy tính kết nối với camera
 Sau bước này server sẽ chạy và gửi thông tin nếu nhận được bất cứ chuyển động nào trong khung hình camera
   
 Bước 5: (Client side) chạy code test_client.py ở client side để lấy thông tin nếu có chuyển động phát hiện và lưu vào DB là mysql  
+![image](https://github.com/nguyenlegialam/motion_detection_and_mqtt/assets/116132135/54f9e094-cf64-4a15-aff7-ef3a4fa2a005)  
 
 
 
