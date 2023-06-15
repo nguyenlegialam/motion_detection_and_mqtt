@@ -18,6 +18,7 @@ main_mqtt: chạy server
 test_client.py: nhận thông tin và lưu vào mysql (có thể thay bằng DB tùy ý)  
 
 Cách chạy server:  
+  
 Bước 1: Đăng nhập vào HiveMQ Cloud (miễn phí cho 1 cluster)  
 ![image](https://github.com/nguyenlegialam/motion_detection_and_mqtt/assets/116132135/02370461-bb4b-4229-8fe5-56bbfabab1dd)  
   
