@@ -2,6 +2,10 @@
 
 Giải thích: code này được áp dụng cho các camera đời cũ không có phát hiện chuyển động cũng như không có giao thức giao tiếp truyền thông tin. Khi chạy code sẽ phát hiện chuyển động và gửi 1 luồng tin json (có thể bắt được) qua giao thức mqtt. Khi có chuyển động trong vùng quét của camera, camera sẽ lưu đoạn video 1 phút sau khi có chuyển động.  
   
+Yêu cầu:  
+  - link rtsp của camera
+  - cài đặt python >3.6 và các thư viện bên ngoài trong requirement
+  
 Bước 1: phát hiện chuyển động thông qua việc chênh lệch các bit trong các frame liên tiếp (server)  
 Bước 2: gửi thông tin gồm id camera, ngày giờ phút phát hiện chuyển động qua giao thức mqtt (server)  
 Bước 3: nhận thông tin được gửi ở trên (client)  
