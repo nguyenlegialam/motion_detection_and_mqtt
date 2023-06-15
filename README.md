@@ -5,6 +5,10 @@ Giải thích: code này được áp dụng cho các camera đời cũ không c
 Yêu cầu:  
   - link rtsp của camera
   - cài đặt python >3.6 và các thư viện bên ngoài trong requirement
+  - database MySql: table có 3 cột là:  
+    + date_time  
+    + timestamp  
+    + id_camera  
   
 Bước 1: phát hiện chuyển động thông qua việc chênh lệch các bit trong các frame liên tiếp (server)  
   
