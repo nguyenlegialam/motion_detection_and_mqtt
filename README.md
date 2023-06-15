@@ -9,10 +9,11 @@ Yêu cầu:
     + date_time  
     + timestamp  
     + id_camera  
+  - máy tính phải có bộ nhớ đủ lớn vì code có lưu lại video dài 1 phút sau khi phát hiện chuyển động  
   
 Bước 1: phát hiện chuyển động thông qua việc chênh lệch các bit trong các frame liên tiếp (server)  
   
-Bước 2: gửi thông tin gồm id camera, ngày giờ phút phát hiện chuyển động qua giao thức mqtt (server)  
+Bước 2: gửi thông tin gồm id camera, ngày giờ phút phát hiện chuyển động qua giao thức mqtt (server) và lưu lại video dài khoảng 1 phút kể từ khi phát hiện chuyển động   
   
 Bước 3: nhận thông tin được gửi ở trên (client)  
   
@@ -33,7 +34,7 @@ Bước 3: Nhập thông tin đăng nhập và url vào code main_mqtt.py
 ![image](https://github.com/nguyenlegialam/motion_detection_and_mqtt/assets/116132135/df7a2095-bad8-4d57-af44-5a49c5435536)  
   
 Bước 4: chạy code main_mqtt ở máy tính kết nối với camera  
-Sau bước này server sẽ chạy và gửi thông tin nếu nhận được bất cứ chuyển động nào trong khung hình camera
+Sau bước này server sẽ chạy và gửi thông tin nếu nhận được bất cứ chuyển động nào trong khung hình camera, đồng thời thực hiện lưu video 1 phút kể từ khi phát hiện chuyển động trong khung hình  
   
 Bước 5: (Client side) chạy code test_client.py ở client side để lấy thông tin nếu có chuyển động phát hiện và lưu vào DB là mysql  
 ![image](https://github.com/nguyenlegialam/motion_detection_and_mqtt/assets/116132135/54f9e094-cf64-4a15-aff7-ef3a4fa2a005)  
