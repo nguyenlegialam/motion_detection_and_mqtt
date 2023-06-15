@@ -18,3 +18,20 @@ main_mqtt: chạy server
 test_client.py: nhận thông tin và lưu vào mysql (có thể thay bằng DB tùy ý)  
 
 Cách chạy server:
+Bước 1: Đăng nhập vào HiveMQ Cloud (miễn phí cho 1 cluster)  
+![image](https://github.com/nguyenlegialam/motion_detection_and_mqtt/assets/116132135/02370461-bb4b-4229-8fe5-56bbfabab1dd)  
+  
+Bước 2: Lấy cluster url  
+![image](https://github.com/nguyenlegialam/motion_detection_and_mqtt/assets/116132135/270d141e-bae6-46a4-8260-87e9f620ae15)  
+  
+Bước 3: Nhập thông tin đăng nhập và url vào code main_mqtt.py
+![image](https://github.com/nguyenlegialam/motion_detection_and_mqtt/assets/116132135/df7a2095-bad8-4d57-af44-5a49c5435536)  
+  
+Bước 4: chạy code main_mqtt ở máy tính kết nối với camera  
+Sau bước này server sẽ chạy và gửi thông tin nếu nhận được bất cứ chuyển động nào trong khung hình camera
+  
+Bước 5: (Client side) chạy code test_client.py ở client side để lấy thông tin nếu có chuyển động phát hiện và lưu vào DB là mysql  
+
+
+
+
